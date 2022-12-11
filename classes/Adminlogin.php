@@ -41,7 +41,7 @@ class Adminlogin
                 Session::set("adminid", $value['adminid']);
                 Session::set("adminuser", $value['adminuser']);
                 Session::set("adminname", $value['adminname']);
-                Session::set("lavel", $value['lavel']);
+                Session::set("level", $value['level']);
                 header("Location:dashboard.php");
             } else {
                 $loginmsg = "Username or Password not match!";
