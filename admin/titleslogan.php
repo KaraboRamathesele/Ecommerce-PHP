@@ -8,7 +8,7 @@
                 <table class="form">
                     <tr>
                         <td>
-                            <label>Website Title</label>
+                            <label>Ecommerce Title</label>
                         </td>
                         <td>
                             <input type="text" placeholder="Enter Website Title..." name="title" class="medium" />
@@ -16,7 +16,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>Website Slogan</label>
+                            <label>Ecommerce Slogan</label>
                         </td>
                         <td>
                             <input type="text" placeholder="Enter Website Slogan..." name="slogan" class="medium" />
