@@ -16,7 +16,7 @@ class Customer
         $this->db = new Database();
         $this->fm = new Format();
     }
-
+    // tbl_customers
     public function customerRegistration($data)
     {
         $name        = $this->fm->validation($data['name']);

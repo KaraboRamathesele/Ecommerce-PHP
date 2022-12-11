@@ -17,20 +17,20 @@ class Cart
         $this->fm = new Format();
     }
 
-    public function addToCart($quantity, $proId)
+    public function addToCart($quantity, $id)
     {
         $quantity = $this->fm->validation($quantity);
         $quantity = mysqli_real_escape_string($this->db->link, $quantity);
-        $proId = mysqli_real_escape_string($this->db->link, $proId);
+        $productId = mysqli_real_escape_string($this->db->link, $id);
         $sId = session_id();
 
-        $squery = "SELECT * FROM tbl_product WHERE productId = '$proId'";
+        $squery = "SELECT * FROM tbl_product WHERE productId = '$productId'";
         $result = $this->db->select($squery)->fetch_assoc();
         $productName = $result['productName'];
         $price = $result['price'];
         $image = $result['image'];
 
-        $chquery = "SELECT * FROM tbl_cart WHERE productId = '$proId' AND sId = '$sId'";
+        $chquery = "SELECT * FROM tbl_cart WHERE productId = '$id' AND sId = '$sId'";
         $getPro = $this->db->select($chquery);
 
         if ($getPro) {
