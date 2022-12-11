@@ -21,25 +21,26 @@ class Adminlogin
         $this->fm = new Format();
     }
 
-    public function adminLogin($adminUser, $adminPass)
+    public function adminLogin($adminuser, $adminpass)
     {
-        $adminUser = $this->fm->validation($adminUser);
-        $adminPass = $this->fm->validation($adminPass);
-        $adminUser = mysqli_real_escape_string($this->db->link, $adminUser);
-        $adminPass = mysqli_real_escape_string($this->db->link, $adminPass);
+        $adminuser = $this->fm->validation($adminuser);
+        $adminpass = $this->fm->validation($adminpass);
+        $adminuser = mysqli_real_escape_string($this->db->link, $adminuser);
+        $adminpass = mysqli_real_escape_string($this->db->link, $adminpass);
 
-        if (empty($adminUser) || empty($adminPass)) {
+        // database to login auth
+        if (empty($adminuser) || empty($adminpass)) {
             $loginmsg = "Username or Password must not be empty!";
             return $loginmsg;
         } else {
-            $query = "SELECT * FROM tbl_admin WHERE adminUser = '$adminUser' AND adminPass = '$adminPass'";
+            $query = "SELECT * FROM tbl_admin WHERE adminuser = '$adminuser' AND adminpass = '$adminpass'";
             $result = $this->db->select($query);
             if ($result != false) {
                 $value = $result->fetch_assoc();
                 Session::set("adminlogin", true);
-                Session::set("adminId", $value['adminId']);
-                Session::set("adminUser", $value['adminUser']);
-                Session::set("adminName", $value['adminName']);
+                Session::set("adminid", $value['adminid']);
+                Session::set("adminuser", $value['adminuser']);
+                Session::set("adminname", $value['adminname']);
                 Session::set("lavel", $value['lavel']);
                 header("Location:dashboard.php");
             } else {
