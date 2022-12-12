@@ -5,10 +5,10 @@
         <div class="support">
             <div class="support_desc">
                 <h3>Live Support</h3>
-                <p><span>24 hours | 7 days a week | 365 days a year &nbsp;&nbsp; Live Technical Support</span></p>
-                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p><span>24 hours &nbsp;&nbsp; Live Technical Support</span></p>
+                <p>Best Specialists</p>
             </div>
-            <img src="web/images/contact.png" alt="" />
+            <img src="/images/contact.png" alt="" />
             <div class="clear"></div>
         </div>
         <div class="section group">
@@ -17,7 +17,7 @@
                     <h2>Contact Us</h2>
                     <form>
                         <div>
-                            <span><label>NAME</label></span>
+                            <span><label>TechWorld</label></span>
                             <span><input type="text" value=""></span>
                         </div>
                         <div>
@@ -29,8 +29,9 @@
                             <span><input type="text" value=""></span>
                         </div>
                         <div>
-                            <span><label>SUBJECT</label></span>
-                            <span><textarea> </textarea></span>
+                            <div class="col-lg-8 col-md-8 bg-white rounded">
+                                <iframe class="w-100 rounded" height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14326.48878298473!2d28.031040637315918!3d-26.143858736729246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c92f2c40d13%3A0x7463dc372a25eb5d!2sRosebank%2C%20Johannesburg%2C%202196!5e0!3m2!1sen!2sza!4v1668952413925!5m2!1sen!2sza" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                         <div>
                             <span><input type="submit" value="SUBMIT"></span>
@@ -38,15 +39,16 @@
                     </form>
                 </div>
             </div>
+
             <div class="col span_1_of_3">
                 <div class="company_address">
-                    <h2>Company Information :</h2>
-                    <p>500 Lorem Ipsum Dolor Sit,</p>
+                    <h2>Company Address :</h2>
+                    <p>500 Rosebank,</p>
                     <p>22-56-2-9 Sit Amet, Lorem,</p>
-                    <p>USA</p>
+                    <p>RSA</p>
                     <p>Phone:(00) 222 666 444</p>
                     <p>Fax: (000) 000 00 00 0</p>
-                    <p>Email: <span>info@mycompany.com</span></p>
+                    <p>Email: <span>info@techworld.com</span></p>
                     <p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
                 </div>
             </div>

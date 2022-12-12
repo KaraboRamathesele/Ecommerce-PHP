@@ -37,7 +37,7 @@ class Cart
             $msg = "Product Already Addred";
             return $msg;
         } else {
-            $query = "INSERT INTO tbl_cart(sId, productId, productName, price, quantity, image) VALUES('$sId', '$proId', '$productName', '$price', '$quantity', '$image')";
+            $query = "INSERT INTO tbl_cart(sId, productId, productName, price, quantity, image) VALUES('$sId', '$productId', '$productName', '$price', '$quantity', '$image')";
             $inserted_row = $this->db->insert($query);
             if ($inserted_row) {
                 header("Location:Cart.php");
